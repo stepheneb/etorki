@@ -1,9 +1,10 @@
 
 load('./spec/support/env.rhino.js')
-load('./spec/lib/jspec.js')
+Envjs("./comments.html");
 load('./spec/support/jquery.js')
-load('./spec/lib/jspec.jquery.js')
+load('./spec/lib/jspec.js')
 load('./spec/lib/jspec.xhr.js')
+load('./spec/lib/jspec.jquery.js')
 // load('lib/etorki.js')
 // load('spec/unit/spec.helper.js')
 
