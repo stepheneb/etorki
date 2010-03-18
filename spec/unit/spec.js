@@ -10,7 +10,7 @@ describe 'Comments'
 		});
     end
 	it 'should hide a visible body'
-		$(fixture('sample-comments')).find('.expandable').each(function (){
+		$(fixture('comment-sample')).find('.expandable').each(function (){
 			$(this).find('.body').show();
 			$(this).find('.body').should.be_visible();
 			toogleBody($(this).find('.title'));
