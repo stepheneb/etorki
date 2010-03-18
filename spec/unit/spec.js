@@ -16,19 +16,15 @@ describe 'Comments'
     end
     
     it 'clicking title should show a hidden body'
-		$expandables.each(function () {
-			$(this).find('.body').should.be_hidden();
-			$(this).find('.title').click();
-			$(this).find('.body').should.be_visible();
-		});
+		$('.body').should.be_hidden();
+		$('.title').click();
+		$('.body').should.be_visible();
     end
 	it 'clicking title should hide a visible body'
-		$expandables.each(function () {
-			$(this).find('.body').show();
-			$(this).find('.body').should.be_visible();
-			$(this).find('.title').click();
-			$(this).find('.body').should.be_hidden();
-		});
+		$('.body').show();
+		$('.body').should.be_visible();
+		$('.title').click();
+		$('.body').should.be_hidden();
     end
   end
 end
