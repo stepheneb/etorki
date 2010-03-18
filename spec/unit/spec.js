@@ -11,7 +11,7 @@ describe 'Comments'
 		$('#test').html('');
     end
     
-    it 'should show a hidden body'
+    it 'clicking title should show a hidden body'
 		$expandables.each(function () {
 			$(this).find('.title').click(toggleHandler);
 			$(this).find('.body').hide();
@@ -20,7 +20,7 @@ describe 'Comments'
 			$(this).find('.body').should.be_visible();
 		});
     end
-	it 'should hide a visible body'
+	it 'clicking title should hide a visible body'
 		$expandables.each(function () {
 			$(this).find('.title').click(toggleHandler);
 			$(this).find('.body').should.be_visible();
