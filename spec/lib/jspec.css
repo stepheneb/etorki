@@ -69,7 +69,7 @@ body.jspec {
   padding-right: 10px;
 }
 #jspec-report .heading .passes em {
-  color: #0ea0eb;
+  color: #007700;
 }
 #jspec-report .heading .failures em {
   color: #FA1616;
@@ -112,6 +112,7 @@ body.jspec {
 }
 #jspec-report td.pass {
   background: url(images/sprites.png) 3px -7px no-repeat;
+  color: #007700;
 }
 #jspec-report td.fail {
   background: url(images/sprites.png) 3px -158px no-repeat;

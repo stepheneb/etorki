@@ -15,6 +15,7 @@ describe 'Comments'
 		});
     end
 	it 'should hide a visible body'
+
 		expandables.each(function () {
 			$(this).find('.body').show();
 			$(this).find('.body').should.be_visible();
