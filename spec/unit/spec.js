@@ -12,10 +12,13 @@ describe 'Comments'
 			$(this).find('.body').should.be_hidden();
 			toggleBody($(this).find('.title'));
 			$(this).find('.body').should.be_visible();
+			toggleBody($(this).find('.title'));
+			$(this).find('.body').should.be_hidden();
 		});
     end
 	it 'should hide a visible body'
 		$expandables.each(function () {
+			$(this).find('.body').hide();
 			$(this).find('.body').show();
 			$(this).find('.body').should.be_visible();
 			toggleBody($(this).find('.title'));
