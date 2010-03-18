@@ -5,7 +5,7 @@ describe 'Comments'
 		$(fixture('comment-sample')).find('.expandable').each(function (){
 			$(this).find('.body').hide();
 			$(this).find('.body').should.be_hidden();
-			toogleBody($(this).find('.title'));
+			toggleBody($(this).find('.title'));
 			$(this).find('.body').should.be_visible();
 		});
     end
@@ -13,7 +13,7 @@ describe 'Comments'
 		$(fixture('comment-sample')).find('.expandable').each(function (){
 			$(this).find('.body').show();
 			$(this).find('.body').should.be_visible();
-			toogleBody($(this).find('.title'));
+			toggleBody($(this).find('.title'));
 			$(this).find('.body').should.be_hidden();
 		});
     end
