@@ -2,8 +2,8 @@
 describe 'Comments'
   describe '.showingAndHiding()'
     before_each
-      var $comment_sample = $(fixture('comment-sample'));
-      var expandables = $comment_sample.find('.expandable');
+      $comment_sample = $(fixture('comment-sample'));
+      expandables = $comment_sample.find('.expandable');
     end
     
     it 'should show a hidden body'
