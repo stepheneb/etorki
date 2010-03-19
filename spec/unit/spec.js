@@ -58,23 +58,23 @@ describe 'Etorki'
     end
 
     it 'Shows hidden .body elements when .titles are clicked'
-      $('.body').should.be_hidden();
-      $('.title').click();
-      $('.body').should.be_visible();
+      $('.expandable .body').should.be_hidden();
+      $('.expandable .title').click();
+      $('.expandable .body').should.be_visible();
     end
 
     it 'Hides visible .body elements when .titles are clicked'
-      $('.body').show();
-      $('.body').should.be_visible();
-      $('.title').click();
-      $('.body').should.be_hidden();
+      $('.expandable .body').show();
+      $('.expandable .body').should.be_visible();
+      $('.expandable .title').click();
+      $('.expandable .body').should.be_hidden();
     end
     
     it 'Reveals only the .body element whose .title is clicked'
-      $('.body').should.be_hidden;
-      $('.title:first').click();
-      $('.body:first').should.be_visible;
-      $('.body:eq(1)').should.be_hidden;
+      $('.expandable .body').should.be_hidden;
+      $('.expandable .title:first').click();
+      $('.expandable .body:first').should.be_visible;
+      $('.expandable .body:eq(1)').should.be_hidden;
     end
     
   end
