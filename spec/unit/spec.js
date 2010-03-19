@@ -27,7 +27,7 @@ describe 'Etorki'
     it 'hides visible .expandable .body elements when .expandables .titles are clicked'
       $('#etorki_body_element_1').show();
       $('#etorki_body_element_1').should.be_visible();
-      $('.expandable .title').click();
+      $('#etorki_title_element_1').click();
       $('#etorki_body_element_1').should.be_hidden();
     end
     
