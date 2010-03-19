@@ -1,0 +1,1 @@
+java -jar spec/support/js.jar lint/jslint.js lib/etorki.js
