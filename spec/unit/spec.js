@@ -8,7 +8,7 @@ describe 'jQuery.fn.toggle()'
     $('#test').remove();
   end
 
-  describe '#toggled'
+  describe 'toggled'
     it 'should be visible by default'
       $('#toggled').should.be_visible
     end
