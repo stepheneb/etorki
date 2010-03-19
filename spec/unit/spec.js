@@ -70,7 +70,7 @@ describe 'Etorki'
       $('.body').should.be_hidden();
     end
     
-    it 'hides only the .body element whose .title is clicked'
+    it 'Reveals only the .body element whose .title is clicked'
       $('.body').should.be_hidden;
       $('.title:first').click();
       $('.body:first').should.be_visible;
