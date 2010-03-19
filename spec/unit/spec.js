@@ -15,20 +15,20 @@ describe 'Etorki'
     end
     
     it 'hides .expandable .body elements at the start'
-      $('.expandable .body').should.be_hidden();
+      $('#etorki_body_element_1').should.be_hidden();
     end
     
     it 'shows hidden .expandable .body elements when .titles are clicked'
-      $('.expandable .body').should.be_hidden();
-      $('.expandable .title').click();
-      $('.expandable .body').should.be_visible();
+      $('#etorki_body_element_1').should.be_hidden();
+      $('#etorki_title_element_1').click();
+      $('#etorki_body_element_1').should.be_visible();
     end
 
     it 'hides visible .expandable .body elements when .expandables .titles are clicked'
-      $('.expandable .body').show();
-      $('.expandable .body').should.be_visible();
+      $('#etorki_body_element_1').show();
+      $('#etorki_body_element_1').should.be_visible();
       $('.expandable .title').click();
-      $('.expandable .body').should.be_hidden();
+      $('#etorki_body_element_1').should.be_hidden();
     end
     
     it 'Reveals only the .body element whose .title is clicked'
