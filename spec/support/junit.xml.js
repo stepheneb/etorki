@@ -1,8 +1,8 @@
 (function(){
     JSpec.include({
         name: 'JUnit',
-        formatters: {
-            JUnitXml: function(results, options) {
+        reporters: {
+            JUnit: function(results, options) {
             var w = new java.io.FileWriter('test-reports/jspec.xml');
             w.write('<?xml version="1.0" encoding="UTF-8"?>\n');
             w.write('<testsuites>\n');

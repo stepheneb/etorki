@@ -11,6 +11,6 @@ load('spec/unit/spec.helper.js')
 
 JSpec
 .exec('spec/unit/spec.js')
-.run({ formatter : JSpec.formatters.JUnit, fixturePath: 'spec/fixtures' } )
-//.run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
+.run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
+.run({ reporter: JSpec.reporters.JUnit, fixturePath: 'spec/fixtures' } )
 .report()
