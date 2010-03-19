@@ -32,10 +32,11 @@ describe 'Etorki'
     end
     
     it 'Reveals only the .body element whose .title is clicked'
-      $('.expandable .body').should.be_hidden;
-      $('.expandable .title:first').click();
-      $('.expandable .body:first').should.be_visible;
-      $('.expandable .body:eq(1)').should.be_hidden;
+      $('#etorki_body_element_1').should.be_hidden;
+      $('#etorki_body_element_2').should.be_hidden;
+      $('#etorki_title_element_1').click();
+      $('#etorki_body_element_1').should.be_visible;
+      $('#etorki_body_element_2').should.be_hidden;
     end
     
     describe 'bindToggleHandler()'
