@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-set :server, %w[webrick thin mongrel ]
- 
+
 root_dir = File.dirname(__FILE__)
  
 set :environment, :development
