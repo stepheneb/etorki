@@ -36,8 +36,7 @@ describe 'Etorki'
       $('#etorki_body_element_2').should.be_hidden;
       $('#etorki_title_element_1').click();
       $('#etorki_body_element_1').should.be_visible;
-      // $('#etorki_body_element_2').should.be_hidden;
-      $('#etorki_body_element_1').should.be_hidden
+      $('#etorki_body_element_2').should.be_hidden;
     end
     
     describe 'bindToggleHandler()'
