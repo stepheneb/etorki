@@ -1,1 +1,4 @@
-test-reports/*.xml
+rerun.txt
+test-reports/**
+*.log
+*~
