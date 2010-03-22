@@ -10,21 +10,16 @@
 
 Then /^(?:|I )should see "([^\"]*)" on the screen(?: within "([^\"]*)")?$/ do |text, selector|
   with_scope(selector) do
-    assert page.find(:xpath, "//*[contains(text(), '#{text}')]").visible?
+    page.find(:xpath, "//*[contains(text(), '#{text}')]").should be_visible
   end
 end
 
 Then /^(?:|I )should not see "([^\"]*)" on the screen(?: within "([^\"]*)")?$/ do |text, selector|
   with_scope(selector) do
-    # debugger
-    assert !page.find(:xpath, "//*[contains(text(), '#{text}')]").visible?
+    page.find(:xpath, "//*[contains(text(), '#{text}')]").should_not be_visible
   end
 end
 
 Then /^(?:|I )should see "([^\"]*)" on the screen$/ do |text|
-  if defined?(Spec::Rails::Matchers)
-    page.find('.expandable .body').visible?
-  else
-    assert page.find('.expandable .body').visible?
-  end
+  page.find('.expandable .body').should be_visible
 end
